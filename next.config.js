@@ -10,6 +10,9 @@ const nextConfig = {
   },
   basePath: isProd && repoName ? `/${repoName}` : '',
   assetPrefix: isProd && repoName ? `/${repoName}/` : '',
+  env: {
+    NEXT_PUBLIC_BASE_PATH: isProd && repoName ? `/${repoName}` : '',
+  },
 };
 
 module.exports = nextConfig;
