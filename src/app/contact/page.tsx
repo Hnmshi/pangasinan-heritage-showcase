@@ -27,11 +27,11 @@ export default function ContactPage() {
             <form onSubmit={handleSubmit} className="space-y-5">
               <div>
                 <label htmlFor="name" className="block text-sm font-medium text-neutral-700 mb-1">Full Name</label>
-                <input id="name" type="text" required className="w-full px-4 py-3 rounded-lg border border-neutral-300 text-neutral-700 focus:outline-none focus:ring-2 focus:ring-primary-300 focus:border-primary-500 transition-colors text-sm sm:text-base" placeholder="Juan Dela Cruz" />
+                <input id="name" type="text" required className="w-full px-4 py-3 rounded-lg border border-neutral-300 text-neutral-700 focus:outline-none focus:ring-2 focus:ring-primary-300 focus:border-primary-500 transition-colors text-sm sm:text-base" placeholder="Luis Paolo Hong" />
               </div>
               <div>
                 <label htmlFor="email" className="block text-sm font-medium text-neutral-700 mb-1">Email Address</label>
-                <input id="email" type="email" required className="w-full px-4 py-3 rounded-lg border border-neutral-300 text-neutral-700 focus:outline-none focus:ring-2 focus:ring-primary-300 focus:border-primary-500 transition-colors text-sm sm:text-base" placeholder="juan@example.com" />
+                <input id="email" type="email" required className="w-full px-4 py-3 rounded-lg border border-neutral-300 text-neutral-700 focus:outline-none focus:ring-2 focus:ring-primary-300 focus:border-primary-500 transition-colors text-sm sm:text-base" placeholder="luwes@example.com" />
               </div>
               <div>
                 <label htmlFor="message" className="block text-sm font-medium text-neutral-700 mb-1">Message</label>
