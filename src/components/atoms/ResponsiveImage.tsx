@@ -9,15 +9,22 @@ interface ResponsiveImageProps {
   height?: number;
   className?: string;
   priority?: boolean;
+  effect?: 'none' | 'vibrant' | 'warm' | 'cool';
 }
 
-export default function ResponsiveImage({ src, alt, width, height, className = '', priority = false }: ResponsiveImageProps) {
+export default function ResponsiveImage({ src, alt, width, height, className = '', priority = false, effect = 'vibrant' }: ResponsiveImageProps) {
   const [loaded, setLoaded] = useState(false);
   const [error, setError] = useState(false);
 
-  // Prepend basePath for production GitHub Pages
   const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
   const fullSrc = `${basePath}${src}`;
+
+  const effectClasses: Record<string, string> = {
+    none: '',
+    vibrant: 'brightness-105 contrast-105 saturate-110',
+    warm: 'brightness-105 contrast-105 saturate-110 sepia-[0.1]',
+    cool: 'brightness-105 contrast-110 saturate-105 hue-rotate-[5deg]',
+  };
 
   if (error) {
     return (
@@ -34,7 +41,17 @@ export default function ResponsiveImage({ src, alt, width, height, className = '
     <div className={`relative overflow-hidden ${className}`}>
       {!loaded && <div className="absolute inset-0 bg-primary-100 animate-pulse" style={{ minHeight: height || 200 }} />}
       {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img src={fullSrc} alt={alt} width={width} height={height} loading={priority ? 'eager' : 'lazy'} onLoad={() => setLoaded(true)} onError={() => setError(true)} className={`w-full h-full object-cover transition-opacity duration-300 ${loaded ? 'opacity-100' : 'opacity-0'}`} />
+      <img
+        src={fullSrc}
+        alt={alt}
+        width={width}
+        height={height}
+        loading={priority ? 'eager' : 'lazy'}
+        decoding="async"
+        onLoad={() => setLoaded(true)}
+        onError={() => setError(true)}
+        className={`w-full h-full object-cover transition-all duration-700 ease-out ${effectClasses[effect]} ${loaded ? 'opacity-100 scale-100' : 'opacity-0 scale-105'}`}
+      />
     </div>
   );
 }

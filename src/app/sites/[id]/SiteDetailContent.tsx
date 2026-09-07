@@ -49,7 +49,7 @@ export default function SiteDetailContent({ site, otherSites }: { site: Heritage
   return (
     <main>
       <motion.section initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.6 }} className="relative h-64 sm:h-80 lg:h-96 overflow-hidden bg-primary-800">
-        <ResponsiveImage src={site.image} alt={`${site.name} landscape`} className="h-full w-full" priority />
+        <ResponsiveImage src={site.image} alt={`${site.name} landscape`} effect="warm" className="h-full w-full" priority />
         <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
         <div className="absolute bottom-0 left-0 right-0 p-6 sm:p-8 lg:p-10">
           <div className="max-w-4xl mx-auto">
