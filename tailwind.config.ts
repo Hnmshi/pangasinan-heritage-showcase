@@ -4,12 +4,13 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        primary: { 50:'#e6f4f9',100:'#b3dff0',200:'#80cae6',300:'#4db5dc',400:'#26a5d5',500:'#0077a8',600:'#006590',700:'#005278',800:'#003f5e',900:'#002c44' },
-        secondary: { 50:'#fdf6ee',100:'#f8e4cc',200:'#f3d2aa',300:'#edc088',400:'#e8b370',500:'#d4944a',600:'#b87d3a',700:'#9a662e',800:'#7c5024',900:'#5e3a1a' },
-        accent: { 50:'#edf7ed',100:'#c8e6c8',200:'#a3d5a3',300:'#7ec47e',400:'#5cb85c',500:'#3d8b3d',600:'#2e7a2e',700:'#256425',800:'#1c4e1c',900:'#133813' },
-        neutral: { 0:'#ffffff',50:'#f8f9fa',100:'#f1f3f5',200:'#e9ecef',300:'#dee2e6',400:'#adb5bd',500:'#6c757d',600:'#495057',700:'#343a40',800:'#212529',900:'#0d1117' },
+        primary: { 50:'#f0f4ff',100:'#dbe4fe',200:'#bfcffc',300:'#93aef8',400:'#6486f2',500:'#4361ee',600:'#3347d9',700:'#2a3ab8',800:'#273395',900:'#1e2a6e' },
+        secondary: { 50:'#fef3e2',100:'#fde2b3',200:'#fbd083',300:'#f9be53',400:'#f7b02f',500:'#f5a623',600:'#e0941a',700:'#c47e13',800:'#a8690e',900:'#7d4e09' },
+        accent: { 50:'#e8f8f5',100:'#d1f2eb',200:'#a3e4d7',300:'#76d7c4',400:'#48c9b0',500:'#1abc9c',600:'#17a589',700:'#148f77',800:'#117a65',900:'#0e6251' },
+        neutral: { 0:'#ffffff',50:'#fafbfc',100:'#f0f2f5',200:'#e4e7eb',300:'#d1d5db',400:'#9ca3af',500:'#6b7280',600:'#4b5563',700:'#374151',800:'#1f2937',900:'#111827' },
       },
-      fontFamily: { display: ['"Playfair Display"','Georgia','serif'], body: ['"Inter"','system-ui','-apple-system','sans-serif'] },
+      fontFamily: { display: ['"DM Serif Display"','Georgia','serif'], body: ['"DM Sans"','system-ui','-apple-system','sans-serif'] },
+      borderRadius: { '2xl': '1rem', '3xl': '1.5rem' },
     },
   },
   plugins: [],

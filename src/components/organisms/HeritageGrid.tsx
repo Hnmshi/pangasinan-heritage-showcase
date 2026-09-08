@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useMemo } from 'react';
-import { Typography, StaggerContainer, StaggerItem } from '../atoms';
+import { Typography, StaggerContainer, StaggerItem, FadeIn } from '../atoms';
 import { HeritageCard, SearchForm } from '../molecules';
 import type { HeritageSite } from '@/data/heritage-sites';
 
@@ -15,14 +15,20 @@ export default function HeritageGrid({ sites }: { sites: HeritageSite[] }) {
 
   return (
     <section aria-label="Heritage sites gallery" className="w-full">
-      <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-8">
-        <Typography variant="h2">Discover Pangasinan</Typography>
-        <SearchForm onSearch={setQuery} />
-      </div>
+      <FadeIn>
+        <div className="text-center mb-12">
+          <Typography variant="overline" className="block mb-3">Featured Destinations</Typography>
+          <Typography variant="h2" className="mb-4">Explore Our Heritage Sites</Typography>
+          <Typography variant="body" className="max-w-2xl mx-auto mb-8">Discover the natural wonders, historical landmarks, and cultural treasures that make Pangasinan a must-visit destination.</Typography>
+          <div className="flex justify-center">
+            <SearchForm onSearch={setQuery} />
+          </div>
+        </div>
+      </FadeIn>
       {filtered.length === 0 ? (
         <div className="text-center py-16"><Typography variant="body" className="text-neutral-400">No heritage sites match your search. Try a different term.</Typography></div>
       ) : (
-        <StaggerContainer className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <StaggerContainer className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-7">
           {filtered.map((site) => <StaggerItem key={site.id}><HeritageCard site={site} /></StaggerItem>)}
         </StaggerContainer>
       )}
