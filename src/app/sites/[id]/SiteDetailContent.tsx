@@ -24,17 +24,17 @@ const siteDetails: Record<string, { highlights: string[]; tips: string[]; bestTi
     bestTime: 'Year-round, but the rainy season makes the surrounding greenery more lush.',
     howToGetThere: 'From Dagupan or Urdaneta, take a bus or jeepney to Balungao town. Tricycles are available to the resort.',
   },
-  'manaoag-church': {
-    highlights: ['One of the most visited pilgrimage sites in the Philippines', 'Houses the miraculous ivory image of the Blessed Virgin Mary', 'Beautiful Baroque-style church architecture', 'Religious museum with historical artifacts', 'Vibrant annual fiesta celebrations'],
-    tips: ['Visit early morning for a quieter prayer time', 'The church grounds can get very crowded on weekends', 'Dress modestly as this is an active place of worship', 'Try the local delicacies sold by vendors outside'],
-    bestTime: 'Any time of year. The feast day in April draws the largest crowds.',
-    howToGetThere: 'Manaoag is about 20 minutes from Dagupan City. Buses and jeepneys run frequently.',
+  'patar-beach': {
+    highlights: ['Pristine white-sand beach with turquoise waters', 'Dramatic rock formations perfect for photos', 'One of the best sunset spots in Pangasinan', 'Nearby Bolinao Falls and Enchanted Cave', 'Quiet and uncrowded compared to mainstream beaches'],
+    tips: ['Visit during low tide to explore the rock formations', 'Bring your own food — vendors are limited', 'Best photos during golden hour before sunset', 'Combine with a visit to Cape Bolinao Lighthouse nearby'],
+    bestTime: 'March to May for calm seas and sunny skies.',
+    howToGetThere: 'From Bolinao town center, hire a tricycle to Patar Beach (about 30 minutes). Roads are paved but winding.',
   },
-  'enchanted-cave': {
-    highlights: ['Crystal-clear underground cold spring water', 'Unique rock formations inside the cave', 'Refreshing swimming in natural spring water', 'Tropical garden surroundings', 'Multiple pools with varying depths'],
-    tips: ['Bring waterproof bags for your electronics', 'The cave steps can be slippery — wear aqua shoes', 'Arrive early to avoid long queues on weekends', 'Life vests are available for non-swimmers'],
-    bestTime: 'March to May when the heat makes the cold spring water most refreshing.',
-    howToGetThere: 'Located in Barangay Tara, Bolinao. From Bolinao town center, hire a tricycle.',
+  'cabongaoan-beach': {
+    highlights: ['The famous Death Pool — a natural cliff-side tidal pool', 'Fine white-sand beach with clear waters', 'Dramatic rock formations and sea caves', 'Off-the-beaten-path adventure destination', 'Camping-friendly with beachfront tent areas'],
+    tips: ['Wear sturdy shoes for the rocky trail to the Death Pool', 'Visit during low tide for the safest pool access', 'Bring your own supplies — no stores nearby', 'The trail takes about 20 minutes from the beach'],
+    bestTime: 'March to May for calm seas and clear weather.',
+    howToGetThere: 'From Alaminos City, take a jeepney or van to Burgos town. Hire a tricycle to Cabongaoan Beach (about 15 minutes from town).',
   },
   'tondaligan-beach': {
     highlights: ['Public beach along the scenic Lingayen Gulf', 'Waterfront promenade perfect for evening walks', 'Local seafood restaurants and food stalls nearby', 'Playground and picnic areas for families', "Gateway to Dagupan's famous bangus (milkfish) industry"],
