@@ -9,9 +9,7 @@ A mobile-first, accessible, and high-performing digital platform promoting cultu
 
 ## Live Website
 
-[GitHub Pages URL](https://yourusername.github.io/pangasinan-heritage-showcase/)
-
-> Replace the link above with your actual GitHub Pages URL after deployment.
+[GitHub Pages URL](https://hnmshi.github.io/pangasinan-heritage-showcase//)
 
 ## Tech Stack
 
